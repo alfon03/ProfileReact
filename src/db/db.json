@@ -1,0 +1,41 @@
+{
+  "profiles": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "age": 25,
+      "email": "john.doe@example.com",
+      "destination": "Paris",
+      "likes": 3,
+      "image": "https://i.pinimg.com/736x/83/7f/8f/837f8fdf2801ef1fc77f04b9c7357469.jpg",
+      "description": "Full-stack developer passionate about building scalable web applications.",
+      "languages": [
+        "Python",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "age": 30,
+      "email": "jane.smith@example.com",
+      "destination": "New York",
+      "likes": 9,
+      "image": "https://via.placeholder.com/150?text=Jane",
+      "description": "Backend engineer with a love for distributed systems.",
+      "languages": [
+        "Java",
+        "Python"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "User1",
+      "likedProfiles": [
+        1
+      ]
+    }
+  ]
+}
