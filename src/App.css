@@ -16,7 +16,7 @@ body {
 .app-container {
   text-align: center;
   padding: 0 20px;
-  min-height: 100vh;
+  min-height: 200vh;
 }
 
 .app-header {
@@ -28,6 +28,7 @@ body {
 .profile-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   margin-top: 30px;
   padding: 0 10px;

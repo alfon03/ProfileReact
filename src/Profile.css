@@ -5,6 +5,7 @@
   --papaya-whip: #faedcdff;
   --buff: #d4a373ff;
 }
+
 .profile-card {
   background-color: var(--cornsilk);
   border: 1px solid var(--beige);
@@ -14,11 +15,21 @@
   text-align: center;
   color: var(--buff);
   transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
 }
 
 .profile-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-premium {
+  border-color: var(--buff);
+  box-shadow: 0 0 15px rgba(212, 163, 115, 0.6);
+}
+
+.profile-header {
+  position: relative;
 }
 
 .profile-img {
@@ -62,4 +73,16 @@
   font-size: 0.8rem;
   color: var(--buff);
   border: 1px solid var(--beige);
+}
+
+.verified-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 24px;
+  color: var(--buff);
+  background-color: var(--cornsilk);
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
