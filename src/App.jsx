@@ -42,7 +42,7 @@ const App = () => {
       email: "Gru@gmail.com",
       bio: "Full stack developer, ready to learn new skills",
       skills: ["React", "CSS", "JavaScript"],
-      isPremium: false,
+      isPremium: true,
     },
     {
       url: "https://i.pinimg.com/564x/50/f7/18/50f718efd0743658c3386850d568a60f.jpg",
@@ -58,7 +58,7 @@ const App = () => {
       email: "Gru@gmail.com",
       bio: "Full stack developer, ready to learn new skills",
       skills: ["React", "CSS", "JavaScript"],
-      isPremium: false,
+      isPremium: true,
     },
     
   ];
