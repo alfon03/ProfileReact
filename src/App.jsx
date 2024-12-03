@@ -20,6 +20,46 @@ const App = () => {
       skills: ["React", "CSS", "JavaScript"],
       isPremium: false,
     },
+    {
+      url: "https://i.pinimg.com/564x/50/f7/18/50f718efd0743658c3386850d568a60f.jpg",
+      name: "Gru",
+      email: "Gru@gmail.com",
+      bio: "Full stack developer, ready to learn new skills",
+      skills: ["React", "CSS", "JavaScript"],
+      isPremium: false,
+    },
+    {
+      url: "https://i.pinimg.com/564x/50/f7/18/50f718efd0743658c3386850d568a60f.jpg",
+      name: "Gru",
+      email: "Gru@gmail.com",
+      bio: "Full stack developer, ready to learn new skills",
+      skills: ["React", "CSS", "JavaScript"],
+      isPremium: false,
+    },
+    {
+      url: "https://i.pinimg.com/564x/50/f7/18/50f718efd0743658c3386850d568a60f.jpg",
+      name: "Gru",
+      email: "Gru@gmail.com",
+      bio: "Full stack developer, ready to learn new skills",
+      skills: ["React", "CSS", "JavaScript"],
+      isPremium: false,
+    },
+    {
+      url: "https://i.pinimg.com/564x/50/f7/18/50f718efd0743658c3386850d568a60f.jpg",
+      name: "Gru",
+      email: "Gru@gmail.com",
+      bio: "Full stack developer, ready to learn new skills",
+      skills: ["React", "CSS", "JavaScript"],
+      isPremium: false,
+    },
+    {
+      url: "",
+      name: "Gru",
+      email: "Gru@gmail.com",
+      bio: "Full stack developer, ready to learn new skills",
+      skills: ["React", "CSS", "JavaScript"],
+      isPremium: false,
+    },
     
   ];
 

@@ -44,7 +44,10 @@
 .profile-name {
   font-size: 1.5rem;
   color: var(--buff);
-  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .profile-email {
@@ -60,6 +63,12 @@
 }
 
 .profile-skills {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -68,17 +77,14 @@
 
 .profile-skill {
   background-color: var(--papaya-whip);
-  border-radius: 15px;
   padding: 5px 10px;
-  font-size: 0.8rem;
+  border-radius: 10px;
   color: var(--buff);
   border: 1px solid var(--beige);
+  font-size: 0.85rem;
 }
 
 .verified-badge {
-  position: absolute;
-  top: -5px;
-  right: -5px;
   font-size: 24px;
   color: var(--buff);
   background-color: var(--cornsilk);
