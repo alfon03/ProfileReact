@@ -4,13 +4,29 @@
   --cornsilk: #fefae0ff;
   --papaya-whip: #faedcdff;
   --buff: #d4a373ff;
+  --soft-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --hover-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background: linear-gradient(135deg, var(--beige), var(--cornsilk));
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--buff);
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: var(#fff);
 }
 
 .profile-card {
   background-color: var(--cornsilk);
   border: 1px solid var(--beige);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: var(--soft-shadow);
   padding: 20px;
   text-align: center;
   color: var(--buff);
@@ -19,30 +35,33 @@
 }
 
 .profile-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--hover-shadow);
 }
 
 .profile-premium {
   border-color: var(--buff);
-  box-shadow: 0 0 15px rgba(212, 163, 115, 0.6);
+  box-shadow: 0 0 20px rgba(212, 163, 115, 0.6);
 }
 
 .profile-header {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-img {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   object-fit: cover;
-  border: 3px solid var(--tea-green);
+  border: 4px solid var(--tea-green);
   margin-bottom: 15px;
 }
 
 .profile-name {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
   color: var(--buff);
   display: flex;
   align-items: center;
@@ -51,34 +70,45 @@
 }
 
 .profile-email {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--tea-green);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .profile-bio {
   font-size: 1rem;
   color: var(--buff);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .profile-skills {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   justify-content: center;
 }
 
 .profile-skill {
-  background-color: var(--papaya-whip);
-  padding: 5px 10px;
-  border-radius: 10px;
+  background: var(--papaya-whip);
+  padding: 8px 15px;
+  border-radius: 12px;
   color: var(--buff);
   border: 1px solid var(--beige);
   font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: var(--soft-shadow);
+}
+
+.profile-skill img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }
 
 .verified-badge {
@@ -86,19 +116,18 @@
   color: var(--buff);
   background-color: var(--cornsilk);
   border-radius: 50%;
-  padding: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Botón de favorito */
 .favorite-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   background: none;
   border: none;
   color: var(--tea-green);
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
   transition: color 0.3s, transform 0.2s;
 }

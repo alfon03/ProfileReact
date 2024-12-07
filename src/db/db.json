@@ -1,0 +1,114 @@
+{
+  "profiles": [
+    {
+      "name": "La Rana Gustavo",
+      "email": "gustavo@anfibios.com",
+      "imageUrl": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/noticias-cine/asi-es-denise-la-nueva-novia-de-la-rana-gustavo/67349515-1-esl-ES/Asi-es-Denise-la-nueva-novia-de-la-Rana-Gustavo.jpg",
+      "bio": "Reportero estrella y amante de los charcos.",
+      "skills": [
+        "Python",
+        "Java",
+        "React, Css, Html"
+      ],
+      "isPremium": true,
+      "id": "975a"
+    },
+    {
+      "name": "La Pantera Rosa",
+      "email": "rosa@investigacion.com",
+      "imageUrl": "",
+      "bio": "Experta en resolver casos con estilo.",
+      "skills": [
+        "Python",
+        "Java",
+        "React, Css, Html"
+      ],
+      "isPremium": false,
+      "id": "63d4"
+    },
+    {
+      "name": "El Inspector Gadget",
+      "email": "gadget@tecnologia.com",
+      "imageUrl": "https://blogs.lasprovincias.es/elsindromededarrin/wp-content/uploads/sites/21/2013/03/inspector_gadget.jpg",
+      "bio": "Siempre preparado con un gadget inesperado.",
+      "skills": [
+        "Tecnología",
+        "Investigación",
+        "Imprudencia"
+      ],
+      "isPremium": true,
+      "id": "403f"
+    },
+    {
+      "name": "Gru",
+      "email": "gru@villanos.com",
+      "imageUrl": "https://i.pinimg.com/originals/c2/7a/c9/c27ac9cb77e59453debe5597e4cb6926.jpg",
+      "bio": "Villano retirado, ahora centrado en cuidar a las niñas.",
+      "skills": [
+        "Python",
+        "Java",
+        "React, Css, Html"
+      ],
+      "isPremium": true,
+      "id": "a026"
+    },
+    {
+      "name": "Minions",
+      "email": "minions@banana.com",
+      "imageUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6e55ce30119581.56143248ea6d7.jpg",
+      "bio": "Pequeños ayudantes amarillos con un amor infinito por las bananas.",
+      "skills": [
+        "Python",
+        "Java",
+        "React, Css, Html"
+      ],
+      "isPremium": false,
+      "id": "24c8"
+    },
+    {
+      "name": "Link",
+      "email": "link@hyrule.com",
+      "imageUrl": "https://i0.wp.com/static3.wikia.nocookie.net/__cb20120124235024/zelda/es/images/d/d8/Link_%28Spirit_Tracks%29_2.png",
+      "bio": "Héroe legendario con una misión eterna para salvar a Hyrule.",
+      "skills": [
+        "Python",
+        "Java",
+        "React, Css, Html"
+      ],
+      "isPremium": false,
+      "id": "ed77"
+    },
+    {
+      "id": "b073",
+      "imageUrl": "https://yt3.googleusercontent.com/wpc2B6nslz9DW_pd-KZjlQ26Ds9DLVom3yeMFy87sIZcfZGe7AXVqlZUvP-ePshI7VXvqiDRpWQ=s900-c-k-c0x00ffffff-no-rj",
+      "name": "midudev",
+      "email": "midudev@gmail.com",
+      "bio": "midu",
+      "skills": [
+        "Python",
+        "Java",
+        "React",
+        "Css",
+        "HTML",
+        "JavaScript",
+        "Sql",
+        "react"
+      ]
+    },
+    {
+      "id": "e71a",
+      "imageUrl": "https://i.pinimg.com/736x/83/7f/8f/837f8fdf2801ef1fc77f04b9c7357469.jpg",
+      "name": "alfon",
+      "email": "alfonsosalado03@gmail.com",
+      "bio": "hola",
+      "skills": [
+        "JavaScript",
+        "Java",
+        "Css",
+        "React",
+        "python"
+      ],
+      "isPremium": "true"
+    }
+  ]
+}

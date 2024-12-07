@@ -1,29 +1,44 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import "./Profile.css"; 
+import "./css/Profile.css"; 
 
-const Profile = ({ url, name, email, bio, skills, isPremium}) => {
+
+import reactIcon from "./img/react.png";
+import javaIcon from "./img/java.png";
+import pythonIcon from "./img/python.png";
+
+const skillIcons = {
+  React: reactIcon,
+  Python: pythonIcon,
+  Java: javaIcon,
+
+}
+
+const Profile = ({imageUrl, name, email, bio, skills, isPremium}) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const defaultImage = `https://api.dicebear.com/6.x/initials/svg?seed=${(name)}`;  
 
   const handleFavoriteClick = () => {
     setIsFavorite(!isFavorite); 
   };
-
+  
   return (
      <div className={`profile-card ${isPremium ? "profile-premium" : ""}`}>
-
-      <button
-        className={`favorite-button ${isFavorite ? "favorite-active" : ""}`}
-        onClick={handleFavoriteClick}
-        title={isFavorite ? "Quitar de favoritos" : "Añadir a favoritos"}
-      >
-        <span className="material-symbols-outlined">favorite</span>
-      </button>
+      <div>
+        <button
+          className={`favorite-button ${isFavorite ? "favorite-active" : ""}`}
+          onClick={handleFavoriteClick}
+          title={isFavorite ? "Quitar de favoritos" : "Añadir a favoritos"}
+        >
+        
+          <span className="material-symbols-outlined">favorite</span>
+        
+        </button>
+      </div>
 
    <div className="profile-header">
         <img 
-          src={url || defaultImage} 
+          src={imageUrl || defaultImage} 
           alt={`${name}'s profile`} 
           className="profile-img" 
         />
@@ -39,15 +54,24 @@ const Profile = ({ url, name, email, bio, skills, isPremium}) => {
       <p className="profile-email">{email}</p>
       <p className="profile-bio">
         {bio ? bio : "Este usuario no ha añadido una bio aún."}
-      </p>      
+      </p>
+
       {skills && skills.length > 0 && (
-      <ul className="profile-skills">        
+        <ul className="profile-skills">
           {skills.map((skill, index) => (
-          <li key={index} className="profile-skill">
-              {skill}
-          </li>
-        ))}
-      </ul>
+            <li key={index} className="profile-skill">
+              {skillIcons[skill] ? (
+                <img
+                  src={skillIcons[skill]}
+                  alt={skill}
+                  className="skill-icon"
+                />
+              ) : (
+                skill // Si no hay icono, se muestra el texto de la habilidad
+              )}
+            </li>
+          ))}
+        </ul>
       )}
 
     </div>
@@ -55,7 +79,7 @@ const Profile = ({ url, name, email, bio, skills, isPremium}) => {
 };
 
 Profile.propTypes = {
-  url: PropTypes.string,
+  imageUrl: PropTypes.string,
   name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   bio: PropTypes.string,
@@ -64,7 +88,7 @@ Profile.propTypes = {
 };
 
 Profile.defaultProps = {
-  url: "",
+  imageUrl: "",
   bio: "",
   skills: [],
   isPremium: false,
