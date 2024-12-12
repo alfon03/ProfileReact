@@ -1,0 +1,70 @@
+:root {
+    --tea-green: #ccd5ae;
+    --beige: #e9edc9;
+    --cornsilk: #fefae0;
+    --papaya-whip: #faedcd;
+    --buff: #d4a373;
+    --dark-buff: #906531;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hover-shadow: rgba(0, 0, 0, 0.2);
+  }
+  
+
+#contact_form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  #contact_form .row {
+    margin-bottom: 15px;
+  }
+  
+  #contact_form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #contact_form .required {
+    color: var(--dark-buff); 
+  }
+  
+  #contact_form .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  #contact_form .input:focus {
+    outline: none;
+    border-color: var(--dark-buff);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  #submit_button {
+    background-color: var(--dark-buff);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  #submit_button:hover {
+    background-color: var(--buff);
+  }
+  
+
+  

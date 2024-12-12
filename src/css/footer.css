@@ -1,0 +1,38 @@
+:root {
+    --tea-green: #ccd5ae;
+    --beige: #e9edc9;
+    --cornsilk: #fefae0;
+    --papaya-whip: #faedcd;
+    --buff: #d4a373;
+    --dark-buff: #906531;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hover-shadow: rgba(0, 0, 0, 0.2);
+  }
+  
+
+.footer {
+    background-color: var(--buff);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+.footer .footer-links {
+    margin-top: 10px;
+}
+  
+.footer .footer-links a {
+    color: var(--dark-buff);
+    text-decoration: none;
+    margin: 0 10px;
+    
+}
+  
+.footer .footer-links a:hover {
+    text-decoration: underline;
+    color: var(--dark-buff); 
+}
+  
